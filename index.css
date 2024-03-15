@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-container {
+    padding: 1rem;
+}
+
+.drag-button {
+    width: 5rem;
+    height: 3rem;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.drag-container-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+    border: 2px solid #ccc;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .drag-container-box {
+        flex-direction: row;
+    }
+}
+
+.list-item {
+    width: 5rem;
+    height: 3rem;
+    background-color: red;
+    cursor: pointer;
+    user-select: none;
+}
+
+.drag-item {
+    width: 5rem;
+    height: 3rem;
+    background-color: rgb(81, 255, 0);
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    user-select: none;
+
+}
